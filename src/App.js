@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import MovieList from './Components/MovieList/MovieList';
 import axios from 'axios';
+import TopBar from './Components/TopBar/TopBar';
 
 function App() {
 
@@ -17,6 +18,7 @@ function App() {
 
   return (
     <div>
+      <TopBar />
       <MovieList movies={movies}/>
     </div>
   );
