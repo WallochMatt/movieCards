@@ -1,23 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect, useState } from 'react';
+import MovieList from './Components/MovieList/MovieList';
+import axios from 'axios';
 
 function App() {
+
+  const [movies, setMovies] = useState([]);
+
+  async function getMovies(){
+    let response = await axios.get('http://localhost:8080/movies')
+    setMovies(response.data);
+  }
+
+  useEffect(() => {
+    getMovies()
+  }, [])
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <p>P1</p>
+      <MovieList movies={movies}/>
     </div>
   );
 }
