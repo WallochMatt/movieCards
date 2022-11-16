@@ -2,6 +2,10 @@
 .style {
     height: 4em;
     background-color: #202A44;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
 }
 
 .spacer{
@@ -19,4 +23,10 @@ h2{
 .tab-in{
     margin-left: .5em;
     padding: 1em;
+}
+
+.sticky-node{
+    position: fixed;
+    top: 0;
+    width: 100%;
 }

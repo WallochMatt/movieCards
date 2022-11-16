@@ -17,7 +17,7 @@ function App() {
   }, [])
 
   return (
-    <div>
+    <div style={{ 'padding-top': '5em' }}>
       <TopBar />
       <MovieList movies={movies}/>
     </div>
