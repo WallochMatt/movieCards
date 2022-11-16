@@ -5,7 +5,7 @@ const TopBar = (props) => {
     return ( 
         <div>
             <div className="style">
-                <p>top bar here</p>
+                <h2 className="tab-in">MovieCards</h2>
             </div>
             <div className="spacer"></div>
         </div>

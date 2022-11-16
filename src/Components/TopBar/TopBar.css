@@ -7,3 +7,16 @@
 .spacer{
     height: 1em;
 }
+
+p{
+    color : white;
+}
+
+h2{
+    color: white;
+}
+
+.tab-in{
+    margin-left: .5em;
+    padding: 1em;
+}
