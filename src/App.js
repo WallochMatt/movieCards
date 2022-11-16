@@ -17,7 +17,6 @@ function App() {
 
   return (
     <div>
-      <p>P1</p>
       <MovieList movies={movies}/>
     </div>
   );

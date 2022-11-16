@@ -1,11 +1,11 @@
 import MovieCard from "../MovieCard/MovieCard";
-
+import "../MovieList/MovieList.css"
 
 const MovieList = (props) => {
 
 
     return (
-        <ul>
+        <ul className="cards-ordered">
             {props.movies.map((movie) => {
                 return (
                     <li>

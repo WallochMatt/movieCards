@@ -1,0 +1,9 @@
+/* .card-img-overide {
+    width: 20%;
+} */
+
+.card-size{
+    width: 20em;
+    max-width: 25em;
+    min-width: 10em;
+}
